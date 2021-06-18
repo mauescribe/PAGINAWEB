@@ -1,0 +1,113 @@
+* {box-sizing: border-box;
+ }
+body { margin:0;
+    font-family: sans-serif;
+	background-image: url(/img/foto02.jpg);
+	background-repeat: no-repeat;
+	z-index: -10;
+		
+}
+.formulario { 
+width: 600px;
+max-width: 60%;
+margin: auto;
+margin-left: 700px;
+margin-top: 30px;
+padding: 20px;
+box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
+position: relative;
+z-index: 10000;
+	
+}
+
+
+.formulariocontacto {
+	text-align: center;
+    color: rgba(0,0,0,0.6);
+	margin-top: 2px;
+}
+
+.formuinput, .formulabel, .formusubmit {
+	display: block;
+	width: 100%;
+	font-size: 1.3em;
+}
+.formuinput {
+	padding: 20px;
+	background: transparent;
+	border: 1px solid rgba(0,0,0,.3);
+	margin-bottom: 40px;
+	
+}
+.formuinput:focus {
+outline: 1px solid rgba(0,0,0,0.7)
+}
+.formuinput:focus + .formulabel {
+	margin-top: -130px;
+}
+.formulabel {
+	padding-left: 15px;
+	position: absolute;
+	margin-top: -85px;
+	z-index: -20;
+	transition: all 0.2s;
+}
+.formusubmit {
+	
+	color: black;
+	padding: 10px 20px;
+	cursor: pointer;
+	border: none;
+}
+
+.fijar {
+	margin-top: -135px;
+}
+
+.navbar {
+	background: #FFCD48;
+	position: static;  
+	top: 0;
+}
+
+.navbar a {
+	color: #fff;
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	transition: .3s ease-out all;
+}
+
+.navbar a:hover {
+	background: #1D2F3D;
+	color: #fff;
+	text-decoration: none;
+}
+
+.contenedor {
+	max-width: 900px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+img {
+	width: 100px;
+	height: 50px;
+	float: left;
+	padding: 5px;
+	margin-top: 4px;
+}
+@media screen and (max-width: 1000px)
+{
+.formulario{
+	background: white;
+		flex-wrap: wrap;
+		margin: 0;
+		width: 100%;}
+		.formulario {
+			margin-left: 120px;
+		}
+		}
